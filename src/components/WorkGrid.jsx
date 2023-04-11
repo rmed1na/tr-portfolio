@@ -1,22 +1,38 @@
 // Chakra
 import {
     Box,
+    Button,
+    Drawer,
+    DrawerBody,
+    DrawerCloseButton,
+    DrawerContent,
+    DrawerFooter,
+    DrawerHeader,
+    DrawerOverlay,
     Flex,
     Grid,
     GridItem,
     Image,
-    Text
+    Input,
+    Text,
+    useDisclosure
 } from "@chakra-ui/react";
 // CC
 import data from '../utils/data';
 
 export default function WorkGrid() {
+    const { 
+        isOpen: isDrawerOpen, 
+        onOpen: onDrawerOpen, 
+        onClose: onDrawerClose 
+    } = useDisclosure()
+
     return (
         <>
             <Grid templateColumns='repeat(3, 1fr)'>
                 {data && data.map((item, index) => {
                     return (
-                        <GridItem key={index} w='100%'>
+                        <GridItem key={index} w='100%' cursor='pointer' onClick={onDrawerOpen}>
                             <Box position="relative" h='475px'>
                                 <Image
                                     position="absolute"
@@ -60,6 +76,26 @@ export default function WorkGrid() {
                     )
                 })}
             </Grid>
+
+            <Drawer
+                isOpen={isDrawerOpen}
+                onClose={onDrawerClose}
+                placement='right'
+            >
+                <DrawerOverlay />
+                <DrawerContent>
+                    <DrawerCloseButton />
+                    <DrawerHeader>HEADER</DrawerHeader>
+
+                    <DrawerBody>
+                        <Input placeholder='test' />
+                    </DrawerBody>
+
+                    <DrawerFooter>
+                        <Button>Test</Button>
+                    </DrawerFooter>
+                </DrawerContent>
+            </Drawer>
         </>
     )
 }

@@ -1,3 +1,10 @@
+import cwCover from '../assets/images/CW-cover.png';
+import cwHover from '../assets/images/CW-hover.png';
+import flCover from '../assets/images/FL-cover.png';
+import flHover from '../assets/images/FL-hover.png';
+import liCover from '../assets/images/LI-cover.png';
+import liHover from '../assets/images/LI-hover.png';
+
 const works = [
     {
         name: 'Cable & Wireless',
@@ -7,8 +14,8 @@ const works = [
         role: 'UX/UI Designer & Visual Designer',
         url: '',
         tags: [ 'cw' ],
-        coverImage: 'src/assets/images/CW-cover.png',
-        hoverImage: 'src/assets/images/CW-hover.png',
+        coverImage: cwCover,
+        hoverImage: cwHover,
         images: []
     },
     {
@@ -19,8 +26,8 @@ const works = [
         role: '',
         url: '',
         tags: [ 'fl' ],
-        coverImage: 'src/assets/images/FL-cover.png',
-        hoverImage: 'src/assets/images/FL-hover.png',
+        coverImage: flCover,
+        hoverImage: flHover,
         images: []
     },
     {
@@ -31,8 +38,8 @@ const works = [
         role: '',
         url: '',
         tags: [ 'lipr' ],
-        coverImage: 'src/assets/images/LI-cover.png',
-        hoverImage: 'src/assets/images/LI-hover.png',
+        coverImage: liCover,
+        hoverImage: liHover,
         images: []
     }
 ]
