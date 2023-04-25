@@ -94,7 +94,7 @@ export default function WorkGrid() {
                     <DrawerHeader fontSize='1.75rem'>{selectedWork?.name}</DrawerHeader>
 
                     <DrawerBody>
-                        <Flex gap={10}>
+                        <Flex gap={[5, 10]} direction={['column', 'row']}>
                             <Text fontFamily='Montserrat' w='65%'>{selectedWork?.legend}</Text>
                             <Box color='rgba(157,157,157,1)' w='35%'>
                                 <Text fontFamily='Montserrat'>Date: {selectedWork?.date}</Text>
