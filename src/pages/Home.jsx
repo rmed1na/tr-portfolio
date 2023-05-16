@@ -15,6 +15,11 @@ import headerImage from '../assets/images/header.png';
 import ConstructionBanner from "../components/ConstructionBanner";
 
 export default function Home() {
+    const subject = encodeURIComponent("Hello Thania! Let's work!");
+    const handleMailClick = () => {
+        window.location.href = `mailto:tmrodriguez@hotmail.com?subject=${subject}`;
+    }
+
     return (
         <>
             {/* <ConstructionBanner /> */}
@@ -46,6 +51,7 @@ export default function Home() {
                             _hover={{
                                 bg: 'linear-gradient(90deg, #DB239C 0%, #3D1878 100%)'
                             }}
+                            onClick={handleMailClick}
                         >Let's work</Button>
                     </Box>
                     <Box 
