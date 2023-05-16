@@ -90,7 +90,7 @@ export default function WorkGrid() {
             >
                 <DrawerOverlay />
                 <DrawerContent p={5} color='rgba(69, 69, 69, 1)'>
-                    <DrawerCloseButton m={5} />
+                    <DrawerCloseButton outline='none' m={5} />
                     <DrawerHeader fontSize='1.75rem'>{selectedWork?.name}</DrawerHeader>
 
                     <DrawerBody>
