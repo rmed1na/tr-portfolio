@@ -101,9 +101,12 @@ export default function WorkGrid() {
                                 <Text fontFamily='Montserrat'>Client: {selectedWork?.clientName}</Text>
                                 <Text fontFamily='Montserrat'>Role: {selectedWork?.role}</Text>
                                 <Text fontFamily='Montserrat'>URL: {selectedWork?.url}</Text>
-                                <Text fontFamily='Montserrat'>Tags: {selectedWork?.tags.map((item) => {
-                                    return `#${item} `
-                                })}</Text>
+                                {selectedWork?.tags &&
+                                    <Text fontFamily='Montserrat'>Tags: {selectedWork?.tags.map((item) => {
+                                        return `#${item} `
+                                    })}
+                                    </Text>
+                                }
                             </Box>
                         </Flex>
                         <Flex direction='column' gap={10}>
