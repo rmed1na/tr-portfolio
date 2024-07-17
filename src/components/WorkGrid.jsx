@@ -11,6 +11,7 @@ import {
     Grid,
     GridItem,
     Image,
+    Link,
     Text,
     useDisclosure
 } from "@chakra-ui/react";
@@ -100,7 +101,7 @@ export default function WorkGrid() {
                                 <Text fontFamily='Montserrat'>Date: {selectedWork?.date}</Text>
                                 <Text fontFamily='Montserrat'>Client: {selectedWork?.clientName}</Text>
                                 <Text fontFamily='Montserrat'>Role: {selectedWork?.role}</Text>
-                                <Text fontFamily='Montserrat'>URL: {selectedWork?.url}</Text>
+                                <Text fontFamily='Montserrat'>URL:{' '}<Link href={selectedWork?.url} color='blue.400' isExternal>{selectedWork?.url}</Link></Text>
                                 {selectedWork?.tags &&
                                     <Text fontFamily='Montserrat'>Tags: {selectedWork?.tags.map((item) => {
                                         return `#${item} `
