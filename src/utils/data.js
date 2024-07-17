@@ -34,15 +34,15 @@ import li12 from '../assets/images/LI-12.png';
 import li13 from '../assets/images/LI-13.png';
 import li14 from '../assets/images/LI-14.png';
 
-import CanonHover from 'src/assets/images/Canon-Hover.jpg';
-import C1 from '../assets/images/Canon 1.jpg';
-import C2 from '../assets/images/Canon 2.jpg';
-import C3 from '../assets/images/Canon 3.jpg';
-import C4 from '../assets/images/Canon 4.jpg';
-import C5 from '../assets/images/Canon 5.jpg';
-import C6 from '../assets/images/Canon 6.jpg';
-import C7 from '../assets/images/Canon 7.jpg';
-import C8 from '../assets/images/Canon 8.jpg';
+import CanonHover from '../assets/images/Canon-Hover.jpg';
+import C1 from '../assets/images/Canon-1.jpg';
+import C2 from '../assets/images/Canon-2.jpg';
+import C3 from '../assets/images/Canon-3.jpg';
+import C4 from '../assets/images/Canon-4.jpg';
+import C5 from '../assets/images/Canon-5.jpg';
+import C6 from '../assets/images/Canon-6.jpg';
+import C7 from '../assets/images/Canon-7.jpg';
+import C8 from '../assets/images/Canon-8.jpg';
 
 const works = [
     {
